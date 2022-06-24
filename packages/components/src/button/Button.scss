@@ -25,94 +25,94 @@
 @mixin BUTTON_THEME($BTN_THEME, $BTN_TYPE) {
   @debug 'test #{$BTN_THEME} #{$BTN_TYPE}';
   @if $BTN_THEME == PRIMARY and $BTN_TYPE == FILL {
-    background-color: Color.$BTN_PRIMARY;
+    background-color: Color.$PRIMARY;
     color: Color.$WHITE;
 
     &:hover {
-      background-color: Color.$BTN_PRIMARY_HOVER;
+      background-color: Color.$PRIMARY_HOVER;
     }
     &:active {
-      background-color: Color.$BTN_PRIMARY_ACTIVE;
+      background-color: Color.$PRIMARY_ACTIVE;
     }
   } @else if $BTN_THEME == PRIMARY and $BTN_TYPE == OUTLINE {
     background-color: Color.$WHITE;
-    color: Color.$BTN_PRIMARY_TEXT;
+    color: Color.$PRIMARY_TEXT;
 
     &:hover {
-      background-color: Color.$BTN_PRIMARY_OPACITY_HOVER;
+      background-color: Color.$PRIMARY_OPACITY_HOVER;
     }
     &:active {
-      background-color: Color.$BTN_PRIMARY_OPACITY_ACTIVE;
+      background-color: Color.$PRIMARY_OPACITY_ACTIVE;
     }
   } @else if $BTN_THEME == PRIMARY and $BTN_TYPE == TEXT {
     background-color: transparent;
-    color: Color.$BTN_PRIMARY_TEXT;
+    color: Color.$PRIMARY_TEXT;
 
     &:hover {
-      background-color: Color.$BTN_PRIMARY_OPACITY_HOVER;
+      background-color: Color.$PRIMARY_OPACITY_HOVER;
     }
     &:active {
-      background-color: Color.$BTN_PRIMARY_OPACITY_ACTIVE;
+      background-color: Color.$PRIMARY_OPACITY_ACTIVE;
     }
   } @else if $BTN_THEME == SECONDARY and $BTN_TYPE == FILL {
-    background-color: Color.$BTN_SECONDARY;
+    background-color: Color.$SECONDARY;
     color: Color.$WHITE;
 
     &:hover {
-      background-color: Color.$BTN_SECONDARY_HOVER;
+      background-color: Color.$SECONDARY_HOVER;
     }
     &:active {
-      background-color: Color.$BTN_SECONDARY_ACTIVE;
+      background-color: Color.$SECONDARY_ACTIVE;
     }
   } @else if $BTN_THEME == SECONDARY and $BTN_TYPE == OUTLINE {
     background-color: Color.$WHITE;
-    color: Color.$BTN_SECONDARY_TEXT;
+    color: Color.$SECONDARY_TEXT;
 
     &:hover {
-      background-color: Color.$BTN_SECONDARY_OPACITY_HOVER;
+      background-color: Color.$SECONDARY_OPACITY_HOVER;
     }
     &:active {
-      background-color: Color.$BTN_SECONDARY_OPACITY_ACTIVE;
+      background-color: Color.$SECONDARY_OPACITY_ACTIVE;
     }
   } @else if $BTN_THEME == SECONDARY and $BTN_TYPE == TEXT {
     background-color: transparent;
-    color: Color.$BTN_SECONDARY_TEXT;
+    color: Color.$SECONDARY_TEXT;
 
     &:hover {
-      background-color: Color.$BTN_SECONDARY_OPACITY_HOVER;
+      background-color: Color.$SECONDARY_OPACITY_HOVER;
     }
     &:active {
-      background-color: Color.$BTN_SECONDARY_OPACITY_ACTIVE;
+      background-color: Color.$SECONDARY_OPACITY_ACTIVE;
     }
   } @else if $BTN_THEME == DANGER and $BTN_TYPE == FILL {
-    background-color: Color.$BTN_DANGER;
+    background-color: Color.$DANGER;
     color: Color.$WHITE;
 
     &:hover {
-      background-color: Color.$BTN_DANGER_HOVER;
+      background-color: Color.$DANGER_HOVER;
     }
     &:active {
-      background-color: Color.$BTN_DANGER_ACTIVE;
+      background-color: Color.$DANGER_ACTIVE;
     }
   } @else if $BTN_THEME == DANGER and $BTN_TYPE == OUTLINE {
     background-color: Color.$WHITE;
-    color: Color.$BTN_DANGER_TEXT;
+    color: Color.$DANGER_TEXT;
 
     &:hover {
-      background-color: Color.$BTN_DANGER_OPACITY_HOVER;
+      background-color: Color.$DANGER_OPACITY_HOVER;
     }
     &:active {
-      background-color: Color.$BTN_DANGER_OPACITY_ACTIVE;
+      background-color: Color.$DANGER_OPACITY_ACTIVE;
     }
   } @else if $BTN_THEME == DANGER and $BTN_TYPE == TEXT {
     background-color: transparent;
-    color: Color.$BTN_DANGER_TEXT;
+    color: Color.$DANGER_TEXT;
 
     &:hover {
-      background-color: Color.$BTN_DANGER_OPACITY_HOVER;
+      background-color: Color.$DANGER_OPACITY_HOVER;
     }
     &:active {
-      background-color: Color.$BTN_DANGER_OPACITY_ACTIVE;
+      background-color: Color.$DANGER_OPACITY_ACTIVE;
     }
   } @else {
     color: Color.$TEXT_DEFAULT;
