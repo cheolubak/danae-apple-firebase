@@ -1,0 +1,32 @@
+@use '../styles/Color';
+
+.icon {
+  & * {
+    width: 1em;
+    height: 1em;
+  }
+
+  &[data-color='primary'] {
+    & * {
+      fill: Color.$PRIMARY;
+    }
+  }
+
+  &[data-color='secondary'] {
+    & * {
+      fill: Color.$SECONDARY;
+    }
+  }
+
+  &[data-color='danger'] {
+    & * {
+      fill: Color.$DANGER;
+    }
+  }
+
+  &[data-color='black'] {
+    & * {
+      fill: Color.$BLACK;
+    }
+  }
+}
