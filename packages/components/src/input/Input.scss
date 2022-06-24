@@ -1,0 +1,42 @@
+@use '../styles/Color';
+@use '../styles/Typography';
+
+.input {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+  padding: 0 16px;
+  border-radius: 8px;
+  border: 1px solid Color.$INPUT_BORDER;
+  color: Color.$TEXT_DEFAULT;
+
+  @include Typography.INPUT;
+
+  &.input-file {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline-color: Color.$PRIMARY;
+  }
+
+  &[type='number'] {
+    -moz-appearance: textfield;
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+
+  &::placeholder,
+  & .placeholder {
+    color: Color.$INPUT_PLACEHOLDER;
+  }
+}
+
+input[type='file'] {
+  display: none;
+}
