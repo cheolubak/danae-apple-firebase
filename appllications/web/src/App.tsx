@@ -1,5 +1,5 @@
-import React from 'react';
 import { Button } from '@danae/components';
+import React from 'react';
 
 const App = () => {
   return (
