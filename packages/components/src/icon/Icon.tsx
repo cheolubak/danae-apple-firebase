@@ -70,6 +70,7 @@ import {
   Store,
   ThumbDownFill,
   ThumbUpFill,
+  Calendar,
 } from './icons';
 import ArrowUp from './icons/ArrowUp';
 import InfoOutline from './icons/InfoOutline';
@@ -80,7 +81,7 @@ import { IconType } from './IconType';
 type IconProps = {
   icon: IconType;
   color?: 'primary' | 'secondary' | 'danger' | 'black';
-  size: number;
+  size?: number;
 };
 
 function Icons(icon: IconType) {
@@ -109,6 +110,8 @@ function Icons(icon: IconType) {
       return <BookmarkOff />;
     case 'bookmark-on':
       return <BookmarkOn />;
+    case 'calendar':
+      return <Calendar />;
     case 'call':
       return <Call />;
     case 'card':
