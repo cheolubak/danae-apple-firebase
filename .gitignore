@@ -389,3 +389,5 @@ google-services.json
 storybook-static/
 
 # End of https://www.toptal.com/developers/gitignore/api/firebase,node,visualstudiocode,react,reactnative
+
+coverage/

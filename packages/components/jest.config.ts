@@ -7,5 +7,9 @@ const config: Config.InitialOptions = {
     '^.+\\.(css|less|scss)$': 'babel-jest',
   },
   testEnvironment: 'jsdom',
+  collectCoverage: true,
+  collectCoverageFrom: ['**/*.{ts,tsx}'],
+  coveragePathIgnorePatterns: ['/node_modules/', 'jest.*.*'],
+  coverageDirectory: './coverage',
 };
 export default config;
