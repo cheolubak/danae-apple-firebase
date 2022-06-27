@@ -1,0 +1,27 @@
+@use 'sass:map';
+@use './Palete';
+
+$PRIMARY_COLOR: Palete.$green;
+$SECONDAY_COLOR: Palete.$yellow;
+$DANGER_COLOR: Palete.$red;
+
+$primary: (
+  default: map.get($PRIMARY_COLOR, 500),
+  hover: map.get($PRIMARY_COLOR, 700),
+  active: map.get($PRIMARY_COLOR, 600),
+  text: map.get($PRIMARY_COLOR, 700),
+);
+
+$secondary: (
+  default: map.get($SECONDAY_COLOR, 500),
+  hover: map.get($SECONDAY_COLOR, 700),
+  active: map.get($SECONDAY_COLOR, 600),
+  text: map.get($SECONDAY_COLOR, 700),
+);
+
+$danger: (
+  default: map.get($DANGER_COLOR, 500),
+  hover: map.get($DANGER_COLOR, 700),
+  active: map.get($DANGER_COLOR, 600),
+  text: map.get($DANGER_COLOR, 700),
+);
