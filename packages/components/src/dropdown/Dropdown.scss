@@ -1,0 +1,23 @@
+@use '../styles/Color';
+@use '../styles/Typography';
+
+.dropdown {
+  position: relative;
+  height: 40px;
+  padding: 0 16px;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  border-radius: 12px;
+  color: Color.$TEXT_DEFAULT;
+  border: 1px solid Color.$FORM_BORDER;
+  background-color: Color.$WHITE;
+
+  &.focus {
+    border-color: Color.$PRIMARY;
+  }
+
+  & .placeholder {
+    color: Color.$TEXT_PLACEHOLDER;
+  }
+}
